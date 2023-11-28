@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/* General */
+
+body {
+    font-family: 'Kaushan Script', cursive;
+    background-image: url(assets/background.png);
+    background-size: cover;
+}
+
+header h1 {
+    margin-top: 50px;
+    color: #00602D;
+    text-align: center;
+}
+
+header span {
+    color: #DA0606;
+}
+
+#title {
+    display: flex;
+}
+
+#title p,
+#title svg {
+    margin: auto 10px;
+}
+
+.gridContainer {
+    width: 90%;
+    margin: 150px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 175px);
+    gap: 15px;
+}
+
+.glass {
+    width: 175px;
+    height: 175px;
+    border-radius: 5px;
+    background-color: #D9D9D9CC;
+}
