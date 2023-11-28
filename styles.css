@@ -22,6 +22,7 @@ header span {
 
 #title {
   display: flex;
+  margin: 1% 0% 0% 1%;
 }
 
 #title p,
@@ -49,7 +50,6 @@ header span {
   box-shadow: 0 4px 4px 0 #5c5c5ccc;
   cursor: pointer;
 }
-
 
 /* modal container */
 
@@ -125,13 +125,9 @@ header span {
   margin-bottom: 5px;
 }
 
-
-
-
 /* media queries */
 
-@media screen and (max-width:660px) {
-
+@media screen and (max-width: 660px) {
   header h1 {
     font-size: 2.5rem;
   }
@@ -142,8 +138,7 @@ header span {
   }
 }
 
-@media screen and (min-width:600px) and (max-width:1024px) {
-
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   header h1 {
     font-size: 3rem;
   }
