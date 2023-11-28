@@ -33,14 +33,16 @@ header span {
   width: 90%;
   margin: 5% auto;
   padding-bottom: 5%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 175px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 4.47%;
 }
 
 .glass {
-  width: 175px;
-  height: 175px;
+  min-width: 175px;
+  min-height: 175px;
+  margin-bottom: 4.47%;
   border-radius: 5px;
   background-color: #d9d9d9cc;
 }
