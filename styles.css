@@ -51,10 +51,60 @@ header span {
   cursor: pointer;
 }
 
+/* background cases */
+
+.basic {
+  background-image: url(/assets/gifts/ruban.png);
+  background-size: cover;
+}
+
+.green {
+  background-image: url(/assets/gifts/vert.png);
+  background-size: cover;
+}
+
+.special1 {
+  background-image: url(/assets/gifts/OIG\ \(1\).svg);
+  background-size: cover;
+}
+
+.special2 {
+  background-image: url(/assets/gifts/OIG\ \(2\).svg);
+  background-size: cover;
+}
+
+.cyan {
+  background-image: url(/assets/gifts/autrerubanencore.png);
+  background-size: cover;
+}
+
+.red {
+  background-image: url(/assets/gifts/rubanrouge.png);
+  background-size: cover;
+}
+
+.white {
+  background-image: url(/assets/gifts/rubanblanc.png);
+  background-size: cover;
+}
+
+.basicred {
+  background-image: url(/assets/gifts/autreRuban.png);
+  background-size: cover;
+}
+
+.redShiny {
+  background-image: url(/assets/gifts/autrerubanrouge.png);
+  background-size: cover;
+}
+
+
+
+
+
 /* modal container */
 
 .modal-container {
-  /* display: none; */
   visibility: hidden;
   position: fixed;
   top: 0;
@@ -64,7 +114,6 @@ header span {
 }
 
 .modal-container.active {
-  /* display: block; */
   visibility: visible;
 }
 
