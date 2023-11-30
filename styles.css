@@ -9,11 +9,22 @@ body {
   margin: 0;
 }
 
+header {
+  margin: 0% 5% 0% 5%;
+}
+
 header h1 {
   margin-top: 50px;
   color: #00602d;
   text-align: center;
   font-size: 4em;
+}
+
+header p {
+  margin-top: 0%;
+  color: #00602d;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 header span {
@@ -27,8 +38,30 @@ header span {
 
 #title p,
 #title svg {
-  margin: auto 0.5%;
+  margin: auto 1%;
   font-size: 1em;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+svg {
+  animation: rotateAnimation 3s infinite;
+}
+
+svg:hover {
+  animation: none;
+  transform: rotate(360deg);
+}
+
+svg:active {
+  transform: scale(1.5);
 }
 
 .gridContainer {
@@ -64,12 +97,12 @@ header span {
 }
 
 .special1 {
-  background-image: url(/assets/gifts/OIG\ \(1\).svg);
+  background-image: url(/assets/gifts/OIG1.png);
   background-size: cover;
 }
 
 .special2 {
-  background-image: url(/assets/gifts/OIG\ \(2\).svg);
+  background-image: url(/assets/gifts/OIG3.png);
   background-size: cover;
 }
 
@@ -97,10 +130,6 @@ header span {
   background-image: url(/assets/gifts/autrerubanrouge.png);
   background-size: cover;
 }
-
-
-
-
 
 /* modal container */
 
@@ -133,9 +162,9 @@ header span {
 
 .modal {
   opacity: 0;
-  width: 95%;
+  width: 80%;
   max-width: 500px;
-  min-width: 300px;
+  min-width: 250px;
   padding: 30px;
   background: #fff;
   border-radius: 5px;
