@@ -9,11 +9,22 @@ body {
   margin: 0;
 }
 
+header {
+  margin: 0% 5% 0% 5%;
+}
+
 header h1 {
   margin-top: 50px;
   color: #00602d;
   text-align: center;
   font-size: 4em;
+}
+
+header p {
+  margin-top: 0%;
+  color: #00602d;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 header span {
@@ -86,12 +97,12 @@ svg:active {
 }
 
 .special1 {
-  background-image: url(/assets/gifts/gold.png);
+  background-image: url(/assets/gifts/OIG1.png);
   background-size: cover;
 }
 
 .special2 {
-  background-image: url(/assets/gifts/gold.png);
+  background-image: url(/assets/gifts/OIG3.png);
   background-size: cover;
 }
 
@@ -151,9 +162,9 @@ svg:active {
 
 .modal {
   opacity: 0;
-  width: 95%;
+  width: 80%;
   max-width: 500px;
-  min-width: 300px;
+  min-width: 250px;
   padding: 30px;
   background: #fff;
   border-radius: 5px;
