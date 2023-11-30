@@ -35,3 +35,7 @@ for (let i = 1; i <= 24; i++) {
     });
   });
 }
+
+// recup date du jour
+
+const jourActuel = dateActuelle.getDate();
