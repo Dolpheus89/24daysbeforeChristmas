@@ -133,9 +133,9 @@ header span {
 
 .modal {
   opacity: 0;
-  width: 95%;
+  width: 80%;
   max-width: 500px;
-  min-width: 300px;
+  min-width: 250px;
   padding: 30px;
   background: #fff;
   border-radius: 5px;
