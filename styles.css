@@ -31,6 +31,18 @@ header span {
   font-size: 1em;
 }
 
+svg {
+  animation: 1s infinite;
+}
+
+svg:hover {
+  transform: rotate(360deg);
+}
+
+/* @keyframes svg {
+  transition 10%;
+} */
+
 .gridContainer {
   width: 90%;
   margin: 5% auto;
@@ -64,12 +76,12 @@ header span {
 }
 
 .special1 {
-  background-image: url(/assets/gifts/OIG\ \(1\).svg);
+  background-image: url(/assets/gifts/OIG\\(1\).svg);
   background-size: cover;
 }
 
 .special2 {
-  background-image: url(/assets/gifts/OIG\ \(2\).svg);
+  background-image: url(/assets/gifts/OIG\\(2\).svg);
   background-size: cover;
 }
 
@@ -97,11 +109,6 @@ header span {
   background-image: url(/assets/gifts/autrerubanrouge.png);
   background-size: cover;
 }
-
-
-
-
-
 /* modal container */
 
 .modal-container {
