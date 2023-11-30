@@ -31,6 +31,28 @@ header span {
   font-size: 1em;
 }
 
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+svg {
+  animation: rotateAnimation 3s infinite;
+}
+
+svg:hover {
+  animation: none;
+  transform: rotate(360deg);
+}
+
+svg:active {
+  transform: scale(1.5);
+}
+
 .gridContainer {
   width: 90%;
   margin: 5% auto;
@@ -64,12 +86,12 @@ header span {
 }
 
 .special1 {
-  background-image: url(/assets/gifts/OIG\ \(1\).svg);
+  background-image: url(/assets/gifts/gold.png);
   background-size: cover;
 }
 
 .special2 {
-  background-image: url(/assets/gifts/OIG\ \(2\).svg);
+  background-image: url(/assets/gifts/gold.png);
   background-size: cover;
 }
 
@@ -97,10 +119,6 @@ header span {
   background-image: url(/assets/gifts/autrerubanrouge.png);
   background-size: cover;
 }
-
-
-
-
 
 /* modal container */
 
