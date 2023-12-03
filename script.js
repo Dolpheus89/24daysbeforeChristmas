@@ -1,4 +1,30 @@
 // fenetre modal
+// document.addEventListener("DOMContentLoaded", () => {
+//   const calendar = document.getElementsByClassName("gridContainer");
+//   const today = new Date();
+//   const actualDay = today.getDate();
+
+//   for (let day = 1; day <= 24; index++) {
+//     const calendarCase = document.createElement("div");
+//     calendarCase.classList.add("case");
+//     if (day < actualDay) {
+//       calendarCase.classList.add("past");
+//       calendarCase.addEventListener("click", () => openCase(day));
+//     } else if (day === actualDay) {
+//       calendarCase.classList.add("present");
+//       calendarCase.addEventListener("click", () => openCase(day));
+//     } else {
+//       calendarCase.classList.add("future");
+//     }
+//     calendarCase.textContent = day;
+//     calendar.appendChild(calendarCase);
+//   }
+// });
+
+function openCase(day) {
+  alert(`Ouverture de la case du jour ${day} !`);
+}
+
 const modalContainer = document.querySelector(".modal-container");
 const modalTrigger = document.querySelectorAll(".modal-trigger");
 
@@ -9,6 +35,37 @@ modalTrigger.forEach((trigger) =>
 function toggleModal() {
   modalContainer.classList.toggle("active");
 }
+
+// Date recuperation
+const today = new Date();
+const actualDay = today.getDate();
+
+// function toggleModal(day) {
+//   if (today <= actualDay) {
+//     modalContainer.classList.toggle("active");
+//   } else {
+//     alert(`C'est une date du futur ! Reviens un autre jour ! :)`);
+//   }
+// }
+
+// // Appel de la fonction toggleModal avec le jour approprié lorsque l'élément est cliqué
+// modalTrigger.forEach((trigger, index) => {
+//   trigger.addEventListener("click", () => toggleModal(index + 1));
+// });
+
+// const today = new Date();
+// const actualDay = today.getDate();
+
+// function toggleModal() {
+//   for (let day = 1; day <= 24; day++) {
+//     const element = array[day];
+//     if (day === actualDay) {
+//       modalContainer.classList.toggle("active");
+//     } else {
+//       alert(`C'est une date du futur ! Reviens un autre jour ! :)`);
+//     }
+//   }
+// }
 
 // select message
 
