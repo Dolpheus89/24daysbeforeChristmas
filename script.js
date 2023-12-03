@@ -27,10 +27,24 @@ function openCase(day) {
 
 const modalContainer = document.querySelector(".modal-container");
 const modalTrigger = document.querySelectorAll(".modal-trigger");
+const dateActuelle = new Date();
+const jourActuel = dateActuelle.getDate();
+console.log(jourActuel);
 
-modalTrigger.forEach((trigger) =>
-  trigger.addEventListener("click", toggleModal)
-);
+modalTrigger.forEach((trigger) => {
+  const caseNumb = trigger.classList[1];
+  const index = parseInt(caseNumb.replace("case", ""));
+
+  function handleClick() {
+    if (index <= jourActuel) {
+      toggleModal();
+    } else {
+      alert("Vous ne pouvez pas ouvrir cette case avant la date prévue !");
+    }
+  }
+
+  trigger.addEventListener("click", handleClick);
+});
 
 function toggleModal() {
   modalContainer.classList.toggle("active");
